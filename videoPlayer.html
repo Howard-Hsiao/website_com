@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="main.js"></script>
+  <title>Video Player</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- my CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <ul class="nav pull-right">
+    <li class="nav-item">
+      <a class="nav-link active" href="homePage.html">
+        <img src="icon.png" width="35px" alt="">
+        Video Platform
+      </a>
+  </ul>
+
+  <!-- contaner starts -->
+  <div class="player-container">
+  <!-- row starts -->
+  <div class="row">
+    <div class="col-md-9">
+      <div class="player-video">
+        <div class="embed-responsive embed-responsive-16by9">
+        <video class="embed-responsive-item" id="videoPlayer" controls>
+            <source src="VID1.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+
+      <div class="intro">
+        <br>
+        <h3>Video Title</h3>
+        <hr>
+        <p>
+          Intro content
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3 player-list">
+      <!-- 播放清單 -->
+      <ul class="list-group list-group-flush">
+        <li class="list-title list-group-item">Video List</li>
+        <li class="list-group-item">
+          <a onclick="alert(document.getElementById('playingVideo').src);document.getElementById('playingVideo').setAttribute('src', 'VID1.mp4');alert(document.getElementById('playingVideo').src);" href="">Video1</a>
+        </li>
+      </ul>
+    </div><!-- 播放清單ends -->
+  </div>
+  <!-- row ends -->
+  </div>
+  <!-- container ends -->
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <p>電腦網路導論第二組</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
